@@ -6,7 +6,7 @@ import {collatedTasksExist} from '../helpers';
 const collatedTasks = () => {
 };
 
-export const useTasksExist = selectedProject => {
+export const useTasks = selectedProject => {
     const [tasks, setTasks] = useState([]);
     const [archivedTasks, setArchivedTasks] = useState([]);
 
