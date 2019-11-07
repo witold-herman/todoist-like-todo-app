@@ -69,7 +69,7 @@ export const useProjects = () => {
                     setProjects(allProjects)
                 }
             });
-    }, [projects])
+    }, [projects]);
 
     return { projects, setProjects};
 }
