@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { firebase } from '../firebase';
 import { generatePushId } from '../helpers';
 import { useProjectsValue } from '../context';
@@ -17,9 +16,9 @@ export const AddProject = ({ shouldShow = false }) => {
             .firestore()
             .collection('projects')
             .add({
-                projectId: '',
+                projectId,
                 name: projectName,
-                userId: 'jlIFXIwyAL3tzHMtzRbw',
+                userId: 'jllFXIwyAL3tzHMtzRbw',
             })
             .then(() => {
                 setProjects([...projects]);
